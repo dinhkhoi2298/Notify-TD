@@ -30,7 +30,7 @@ public OnPlayerConnect(playerid) {
 
 	for(new i = 0; i < 1 + GetPlayerPoolSize(); i ++) {
 		if(IsPlayerConnected(i)) {
-			Notify_Send(playerid, str, 3000); 
+			Notify_Send(i, str, 3000); 
 		}
 	}
 	return 1;
@@ -45,7 +45,7 @@ public OnPlayerDisconnect(playerid, reason) {
 
 	for(new i = 0; i < 1 + GetPlayerPoolSize(); i ++) {
 		if(IsPlayerConnected(i)) {
-			Notify_Send(playerid, str, 3000);
+			Notify_Send(i, str, 3000);
 		}
 	}
 	return 1;
