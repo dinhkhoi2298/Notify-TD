@@ -1,3 +1,9 @@
+#if defined _notify_td_included
+    #endinput
+#endif
+
+#define _notify_td_included
+
 #include <a_samp>
 
 const MAX_NOTIFY_TD = 20;
